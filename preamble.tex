@@ -28,6 +28,8 @@
 %%% мадыфікатары напісання
 \usepackage{soul}
 
+\usepackage{verbatimbox}
+
 %%% спасылкі ў pdf
 \usepackage{hyperref}
     \hypersetup{
@@ -62,7 +64,7 @@
         singlelinecheck=false,          % не выраўноўваць па цэнтру, калі 1 радок
         skip=0pt,                       % паміж табліцай і назвай няма адлегласці
         font=onehalfspacing,            % 1,5 інтэрвал паміж радкамі
-        belowskip=-0.2\baselineskip,    % "магія" для роўных прамежкаў зверху і знізу табліцы (падбіраў для прыблізнай аднолькавасці ў міліметрах)
+        belowskip=-0.2\baselineskip     % "магія" для роўных прамежкаў зверху і знізу табліцы (падбіраў для прыблізнай аднолькавасці ў міліметрах)
     }
     %%% Пункт 3.5 — подпіс ілюстрацый
     \captionsetup[figure]{
@@ -253,8 +255,10 @@
 %%% Табліцы
 \usepackage{array,tabularx,tabulary,booktabs, tabu} % дадатковыя магчымасці для табліц
 \usepackage{longtable}                        % для табліц на некалькі старонак
+\usepackage{supertabular}
 \usepackage{multirow}                         % зліццё радкоў у табліцы
 \usepackage{adjustbox}                        % для афармлення блокаў з пэўным выраўноўваннем
+\usepackage{cellspace, makecell}              % для табліц
 \usepackage{float}                            % опцыя H (уставіць акурат сюды) для табліц і ілюстрацый
 
 %%% Пункт 3.1 — нумар табліцы складаецца з нумару раздзела і
@@ -262,7 +266,7 @@
 \renewcommand{\thetable}{\thesection.\arabic{table}}
 
 %%% Пункт 3.1 — табліца/ілюстрацыя мае адасабляцца пустым радком зверху і знізу
-\setlength\intextsep{1.3\baselineskip}
+\setlength\intextsep{\baselineskip}
 
 %%% малюнкі
 \usepackage{graphicx}
