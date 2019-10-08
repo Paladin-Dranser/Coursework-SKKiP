@@ -131,10 +131,10 @@
 
 \begin{table}[htp]
     \caption{Матрыца інфармацыйнага прыцягнення}
-    \begin{tabularx}{\textwidth}{ |>{\centering\arraybackslash}X
-                                  |c|c|c|c|c|c|c|c|c|c|}
+    \begin{tabularx}{\textwidth}{|>{\centering\arraybackslash}m{1.65cm}
+                                 |c|c|c|c|c|c|c|c|c|c|}
         \hline
-        \makecell{Нумар\\ маршрутызатара}
+        Mаршрутызатар
             & M1   & M2   & M3    & M4    & M5    & M6    & M7    & M8    & M9    & M10 \\
         \hline
         M1  & 12,3 & 12,3 & 32,8  & 43,0  & 35,9  & 53,3  & 43,0  & 37,9  & 36,9  & 32,8 \\
@@ -210,6 +210,7 @@
 %\begin{longtable}{@{\extracolsep{\fill}}|c|l|l|l|c|c|}
 \setlength\LTleft{0pt}
 \setlength\LTright{0pt}
+\fontsize{10}{12}\selectfont
 \begin{longtable}{|>{\centering\arraybackslash}m{0.195\textwidth}
                   |>{\centering\arraybackslash}m{0.15\textwidth}
                   |>{\centering\arraybackslash}m{0.05\textwidth}
@@ -227,10 +228,10 @@
     \hline
     \endfirsthead
 
-    \multicolumn{6}{l}{\hspace{-0.2cm}Працяг табліцы \thetable} \\
-    \hline
-    1 & 2 & 3 & 4 & 5 & 6 \\
-    \hline
+        \multicolumn{6}{l}{\hspace{-0.2cm}\normalsize Працяг табліцы \thetable} \\
+        \hline
+        1 & 2 & 3 & 4 & 5 & 6 \\
+        \hline
     \endhead
 
     \multirow{4}{*}{M1-M2}
@@ -687,6 +688,7 @@
 
     \label{table: Parameters}
 \end{longtable}
+\normalsize
 \vspace{-\baselineskip}
 
 Разлічым сеткавыя параметры для сумарнага знешняга трафіка VoIP пры дапамозе
