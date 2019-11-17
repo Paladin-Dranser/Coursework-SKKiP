@@ -3,3 +3,4 @@
 *.out
 *.toc
 *.pdf
+!appendix_b.pdf
